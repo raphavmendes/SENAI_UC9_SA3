@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+header{
+    background-color:black;
+    height:80px;
+}
+
+.container-grid{
+    width:1200px;
+    height:100%;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.barras{
+    display:none;
+    width: 30px;
+    
+}
+
+.menu a{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.menu{
+    width: 160px;
+    display:flex;
+    justify-content: flex-end;
+    margin-right: -300px;
+}
+
+.banner{
+    height: 800px;
+    background-image: url(../../../assets/img/banner.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.box1{
+    height:600px;
+    margin-top:100px;
+}
+
+.box1 img{
+    width: 300px;
+    height:150px;
+}
+
+.item{
+    margin-bottom:50px;
+    padding:10px;
+    background-color: gray;
+}
+
+.fila-2{
+    margin-left: 200px;
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+}
+
+#promocao{
+    width:300px;
+    height:350px;
+}
+
+#carrossel img{
+    display:none;
+}
+
+.banner-ativo{
+    display:flex;
+}
+
+.rodape{
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    height: 100px;
+}
+
+.posicionamento-header{
+    position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+    .container-grid{
+        width:80%;
+    }
+    .menu{
+        margin-right: -180px;
+    }
+    .banner{
+        background-repeat: round;
+    }
+    .fila-2{
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        display:none;
+        flex-direction: column;
+        width: 250px;
+        position: absolute;
+        top: 0;
+        right: 60px;
+        background-color: black;
+    }
+    .menu a{
+        
+        text-align: center;
+        padding: 15px;
+    }
+    #logo{
+        display:none;
+    }
+    .container-grid h1{
+        font-size: 25px;        
+    }
+    .barras{
+        display:inline-block;
+        width: 70px;
+    }
+    .banner{
+        width:100%;
+    }
+    .box1{
+        display:grid;
+        justify-content: center;
+        margin: 50px;
+    }
+    .fila-2{
+        margin-left: 0px;
+    }
+    .item{
+        margin-bottom: 20px;
+    }
+    .box1 img{
+        width: 250px;
+        height:100px;
+    }
+    #promocao{
+        width: 250px;
+        height:150px;
+    }
+    .menu-ativo{
+        display:flex;
+    }
+}

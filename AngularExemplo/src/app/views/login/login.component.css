@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.telaFundo{
+    background-color: grey;
+    width: 1920px;
+    height:1076px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.telaLogin{
+    background-color: brown;
+    width: 850px;
+    height:650px;
+    display:grid;
+    justify-content:center;
+}
+
+.telaLogin h2{
+    margin:30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+
+.informacoes{
+    display:grid;
+    justify-content: flex-start;
+    width:700px;
+    height:300px;
+}
+
+.emailField{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    height:fit-content;
+}
+
+.passwordField{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    height:fit-content;
+    margin-top: -50px;
+}
+
+.emailField input[type=email]{
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    width: 500px;
+    height:50px;
+    padding:10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.passwordField input[type=password]{
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    width: 500px;
+    height:50px;
+    padding:10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.enviar{
+    display:grid;
+    justify-content: center;
+    align-content: flex-end;
+    margin-bottom: -60px;
+    padding-left: 55px;
+}
+
+#btn-enviar{
+    height:60px;
+    width:550px;
+    margin-top: -25px;
+    border-radius:10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+.esqueceu{
+    margin-top: -210px;
+}
+
+#esqueceuSenha{
+    color:black;
+    display:flex;
+    justify-content: flex-end;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+.registrar{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+    color: black;
+    display:flex;
+    justify-content: center;
+}
+
+.registrar a{
+    color:black;
+}
+
+@media screen and (max-width: 1200px) {
+    .telaFundo{
+        width:100%;
+        height:538px;
+        display:grid;
+        justify-content: center;
+    }
+    body{
+        background-color: grey;
+    }
+    .telaLogin{
+        width:500px;
+        height: 400px;
+        display:grid;
+        justify-content: center;
+    }
+    .col-8{
+        width:75%;
+    }
+    .telaLogin h2{
+        font-size:30px;
+    }
+    .informacoes{
+        justify-content: center;
+        width:525px;
+    }
+    .emailField{
+        font-size: 25px;
+        width: fit-content;
+    }
+    .emailField input[type=email]{
+        font-size: 15px;
+        width:300px;
+        height:35px;
+        margin-left: 10px;
+    }
+    .passwordField{
+        font-size: 25px;
+        width: fit-content;
+    }
+    .passwordField input[type=password]{
+        font-size: 15px;
+        width:300px;
+        height:35px;
+        margin-left: 10px;
+    }
+    #btn-enviar{
+        height: 40px;
+        width:370px;
+        margin-top: -25px;
+        border-radius: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+    #esqueceuSenha{
+        font-size:20px;
+        width:550px;
+    }
+    .registrar{
+        font-size:20px;
+        margin-top:-50px;
+    }
+    .esqueceu{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -200px;
+        padding-right:20px;
+        width: 500px;
+    }
+    .enviar{
+        padding-left: 0px;
+        margin-bottom: 0px;
+        display: grid;
+        justify-content: center;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .telaFundo{
+        width: 100%;
+        height: 1000px;
+        display:flex;
+        justify-content: center;
+    }
+    .telaLogin{
+        width:450px;
+        display: grid;
+        justify-content: center;
+        margin-left: -20px;
+    }
+    .esqueceu{
+        width: 450px;
+    }
+    body{
+        background-color: grey;
+    }
+}
