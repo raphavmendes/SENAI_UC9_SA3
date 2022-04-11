@@ -1,7 +1,7 @@
 Site contém as funções mínimas necessárias para correção do módulo UC9-SA3.
 
 - Página Home em Angular
-- Documentação do Sistema (Visão Negócio)
+- Documentação do Sistema (Visão Negócio e Modelagem de Sistema)
 - Implementação de Eventos (Ao clicar em "Registrar-se Agora" na página de Login e preencher os dados).
 - Segunda Tela no Angular(Tela de Login. Porém há a tela de registro sem estilização)
 
