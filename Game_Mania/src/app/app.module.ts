@@ -9,6 +9,9 @@ import { HomeComponent } from './views/home/home.component';
 import { LoginComponent } from './views/login/login.component';
 import { RegistroComponent } from './views/registro/registro.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { NoticiasComponent } from './views/noticias/noticias.component';
+
 
 @NgModule({
   declarations: [
@@ -17,12 +20,15 @@ import { FormsModule } from '@angular/forms';
     JogadorComponent,
     HomeComponent,
     LoginComponent,
-    RegistroComponent
+    RegistroComponent,
+    NoticiasComponent
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

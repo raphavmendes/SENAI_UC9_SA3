@@ -1,0 +1,91 @@
+<!-- <body>
+    <section class="telaFundo">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div class="telaLogin">
+                        <h2>Área de Usuário</h2>
+                            <div class="informacoes">
+                                
+                                <div class="emailField ">
+                                <label for="email-usuario"><b><u>Email:</u></b></label>
+                                <input type="email" id="email-usuario" maxlength="40" required autocomplete>
+                                </div>
+                                <div class="passwordField">
+                                <label for="password-usuario"><b><u>Senha:</u></b></label>
+                                <input type="password" id="password-usuario">
+                                </div>
+                                <div class="enviar">
+                                    <button type="submit" id="btn-enviar" name="btn-enviar" required>Entrar</button>
+                                </div>
+                                <div class="esqueceu">
+                                    <a href="" id="esqueceuSenha" ><u>Esqueceu a senha?</u></a>
+                                </div>
+                            </div>
+                            
+                            <div class="registrar">
+                                <a href="../registro/">Caso não tenha uma conta, REGISTRE-SE!</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body> -->
+
+<body>
+    <section class="telaFundo">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div class="telaLogin">
+                        <h2>Área de Usuário</h2>
+                            <div class="informacoes">
+
+                                <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+                                    <div class="emailField ">
+                                    <label for="email-usuario"><b><u>Email:</u></b></label>
+                                    <input type="email" name="email" id="email-usuario" placeholder="Ex.: email@email.com" [(ngModel)]="loginModel.email">
+                                    </div>
+
+                                    <div class="passwordField">
+                                    <label for="password-usuario"><b><u>Senha:</u></b></label>
+                                    <input type="password" name="password" id="password-usuario" placeholder="Sua senha aqui..." [(ngModel)]="loginModel.password">
+                                    </div>
+                                    <div class="enviar">
+                                        <input id="botao-enviar" type="submit" value="Fazer Login">
+                                    </div>
+                                </form>
+                                                                
+                                <div class="esqueceu">
+                                    <a href="" id="esqueceuSenha" ><u>Esqueceu a senha?</u></a>
+                                </div>
+                            </div>
+                            
+                            <div class="registrar">
+                                <a href="../registro/">Caso não tenha uma conta, REGISTRE-SE!</a>
+                            </div>
+                    </div>
+                    <p id="mensagem" *ngIf=" mensagem != '' "> {{ mensagem }} </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+<!-- <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+
+    <div class="campo-label">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Ex.: email@email.com" [(ngModel)]="loginModel.email">
+    </div>
+
+    <div class="campo-label">
+        <label for="senha">Senha</label>
+        <input type="password" name="password" id="senha" placeholder="Sua senha aqui..." [(ngModel)]="loginModel.password">
+    </div>
+
+    <input id="botao-enviar" type="submit" value="Fazer Login">
+
+</form> -->

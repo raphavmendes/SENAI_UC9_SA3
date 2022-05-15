@@ -5,13 +5,15 @@ import { HomeComponent } from './views/home/home.component';
 import { JogadorComponent } from './views/jogador/jogador.component';
 import { LoginComponent } from './views/login/login.component';
 import { RegistroComponent } from './views/registro/registro.component';
+import { NoticiasComponent } from './views/noticias/noticias.component';
 
 const routes: Routes = [
   {path:"", component: HomeComponent},
   {path:"contato", component: ContatoComponent},
   {path:"jogador", component: JogadorComponent},
   {path:"login", component: LoginComponent},
-  {path:"registro", component: RegistroComponent}
+  {path:"registro", component: RegistroComponent},
+  {path:"noticias", component: NoticiasComponent}
   
   ];
 

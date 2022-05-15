@@ -1,0 +1,7 @@
+<p>noticias works!</p>
+
+<div *ngFor="let noticias of listaNoticias" class="cardNews">
+    <img [src]=noticias.imagem alt="">
+    <h3>{{noticias.titulo}}</h3>
+    <p>{{noticias.descricao}}</p>
+</div>
