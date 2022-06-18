@@ -1,0 +1,33 @@
+package gameManiaTeste;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class testeLoginGM {
+	private WebDriver driver;
+	
+	@Before
+	
+	public void abrirNavegador() {
+		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver\\chromedriver.exe");
+		driver = new ChromeDriver();
+	}
+	
+	@Test
+	public void testeNavegador() {
+		driver.get("http://localhost:4200/login");
+		
+		WebElement inputEmail = driver.findElement(By.id("email-usuario"));
+		WebElement inputSenha = driver.findElement(By.id("password-usuario"));
+		WebElement botaoLogin = driver.findElement(By.id("botao-enviar"));
+		
+		inputEmail.sendKeys("joao@email.com");
+		inputSenha.sendKeys("batatafrita");
+		botaoLogin.click();
+		
+	}
+}

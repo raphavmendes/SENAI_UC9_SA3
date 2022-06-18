@@ -1,0 +1,24 @@
+INDEX VERSION 1.131+C:\Users\rapha\eclipse-workspace\gameManiaTeste\.metadata\.plugins\org.eclipse.jdt.core
+1750650942.index
+3854316747.index
+144789862.index
+1509799344.index
+987406824.index
+2728974501.index
+2386135285.index
+3040671532.index
+134477978.index
+1865797976.index
+14901951.index
+2344500553.index
+1162340825.index
+1847405817.index
+4231033858.index
+3115773516.index
+240934228.index
+1150560679.index
+1534152504.index
+1801172520.index
+2113908333.index
+3595663173.index
+919994621.index
